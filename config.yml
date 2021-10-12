@@ -1,0 +1,16 @@
+input-file: main.tex
+output-file: document.docx
+
+filters:
+    - /Users/ryosuke/development/latex2docx/align_filter.py
+    - pandoc-crossref
+    - citeproc
+metadata:
+    autoEqnLabels: true
+    nameInLink: true
+
+reference-doc: latex2docx/reference.docx
+
+csl: latex2docx/physical-review-letters.csl
+bibliography: references.bib
+
