@@ -2,7 +2,7 @@ input-file: main.tex
 output-file: document.docx
 
 filters:
-    - /Users/ryosuke/development/latex2docx/align_filter.py
+    - latex2docx/filter.py
     - pandoc-crossref
     - citeproc
 metadata:
