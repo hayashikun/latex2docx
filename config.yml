@@ -2,12 +2,14 @@ input-file: main.tex
 output-file: document.docx
 
 filters:
-    - latex2docx/filter.py
-    - pandoc-crossref
-    - citeproc
+  - latex2docx/pre_filter.py
+  - pandoc-crossref
+  - citeproc
+  - latex2docx/post_filter.py
+
 metadata:
-    autoEqnLabels: true
-    nameInLink: true
+  autoEqnLabels: true
+  nameInLink: true
 
 reference-doc: latex2docx/reference.docx
 
