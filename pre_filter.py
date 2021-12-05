@@ -7,7 +7,8 @@ def replace(elm, _):
     if hasattr(elm, "text"):
         updated = False
         for k, v in {
-            r"\Im": r"\mathrm{Im}"
+            r"\Im": r"\mathrm{Im}",
+            r"\Re": r"\mathrm{Re}",
         }.items():
             if k in elm.text:
                 elm.text = elm.text.replace(k, v)
