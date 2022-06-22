@@ -3,7 +3,7 @@ import re
 import panflute as pf
 
 eq_label_numbers = dict()
-quad_re = re.compile(r"\\qquad\((\d+)\)", re.MULTILINE)
+quad_re = re.compile(r"\\qquad\{\((\d+)\)\}", re.MULTILINE)
 eq_ref_re = re.compile(r"\[(eq:.+?)]")
 
 
